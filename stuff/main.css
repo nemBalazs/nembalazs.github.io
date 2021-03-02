@@ -1,0 +1,47 @@
+/* uh, its a big mess stop looking at it
+    Colors (no --clr cuz its cringe) */
+:root {
+--background: #2D2A32;
+--justlikeyou: #786423;
+--primary: #FFF;
+--secondary: #75749F;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--primary);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  margin: 0;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 550px;
+  grid-template-areas:
+  "."
+  "main"
+  "footer";
+}
+
+.bigboi {
+  font-size: 28px;
+  background-color: var(--secondary);
+  color: var(--background);
+  text-decoration-style: wavy;
+  border: 2px solid var(--secondary);
+  border-radius: 15px;
+}
+
+.main-stuff {
+  color: var(--primary);
+}
+.main-stuff { grid-column: main; }
+
+p, footer {
+  text-align: center;
+}
+
+footer {
+    margin-top: 0;
+}
