@@ -1,9 +1,8 @@
-/* uh, its a big mess stop looking at it
-    Colors (no --clr cuz its cringe) */
+/* , its a big mess stop looking at it */
 :root {
 --background: #2D2A32;
---justlikeyou: #786423;
 --primary: #FFF;
+--dprimary: #AAA;
 --secondary: #75749F;
 }
 
@@ -14,6 +13,8 @@ html {
   font-size: 12px;
   margin: 0;
 }
+
+/* Layout with grid-template */
 .container {
   display: grid;
   justify-content: center;
@@ -24,24 +25,51 @@ html {
   "footer";
 }
 
+.main-stuff {
+  grid-column: main;
+}
+
 .bigboi {
+  padding: 5px;
   font-size: 28px;
   background-color: var(--secondary);
   color: var(--background);
-  text-decoration-style: wavy;
-  border: 2px solid var(--secondary);
-  border-radius: 15px;
 }
 
-.main-stuff {
-  color: var(--primary);
-}
-.main-stuff { grid-column: main; }
 
+/* Social links */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover
+
+li {
+  background-color: var(--secondary);
+  color: var(--background);
+}
+
+.socials {
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+
+  color: var(--background);
+  border: 1px solid var(--secondary);
+  background-color: var(--secondary);
+
+  font-size: 10px;
+  padding: 6px;
+}
+
+a:active, a:visited {
+  color: var(--background);
+}
+
+/* Yes */
 p, footer {
   text-align: center;
-}
-
-footer {
-    margin-top: 0;
 }
